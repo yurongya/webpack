@@ -25,3 +25,22 @@ webpack是一个javascript应用程序的静态模块打包器（static module b
 
 ## 安装
   npm install webpack webpack-cli -g 或者 yarn global add webpack webpack-cli 然后就可以全局执行命令了 webpack-cli 是使用 webpack 的命令行工具，在4.X版本后不再作为webpack的依赖了，我们使用时需要单独安装这个工具
+  
+ ## 入口 entry
+ 
+  入口起点（entry point）指示webpack应使用哪个模块，来作为构建其内部依赖图的开始，webpack会找出有哪些模块和library是入口起点（直接和间接）依赖的。
+  
+  ```
+    语法： entry: string | [string] | object { : string | [string] } | (function: () => string | [string] | object { : string | [string] })
+    
+  ```
+  传递一个字符串代表一个入口
+  传递数组(Array) 或者对象(Object),代表一个或者多个入口
+  
+  示例
+    
+   ```
+    module.exports = {
+      entry:'app.js'
+    }
+   ```
