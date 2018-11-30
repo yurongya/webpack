@@ -8,5 +8,20 @@ webpack是一个javascript应用程序的静态模块打包器（static module b
   * grunt:类似于gulp也是自动化的构建工具，减轻手动构建的效率低下的问题
   
   * wepack:以模块为入口，使用loader,plugins对文件进行编译，在webpack中所有内容都是模块
+ 
+## webpack的核心概念
   
+  * 模块解析规范，在webpack中模块是按照nodejs commonjs规范定义，也可以自己配置（resolve）
   
+  * 入口（entry）
+  
+  * 出口（output）
+  
+  * 解析规则（loader）
+
+  * 插件（plugins）
+  
+  * devServer
+
+## 安装
+  npm install webpack webpack-cli -g 或者 yarn global add webpack webpack-cli 然后就可以全局执行命令了 webpack-cli 是使用 webpack 的命令行工具，在4.X版本后不再作为webpack的依赖了，我们使用时需要单独安装这个工具
